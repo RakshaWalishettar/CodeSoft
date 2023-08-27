@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: #6bb2bf;
+    --second-bg-color:#654057;
+    --text-color:#f40eb6;
+    --second-text-color:#ccc;
+    --main-color:#01050bc7;
+    --big-font:3rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.nav
+{
+    display:flex;
+    justify-self: space-around;
+    align-items:center;
+    height:100px;
+    background-color: #ccc;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+.logo{
+    color: var(--text-color);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px ;
+    font-weight:bold;
+    letter-spacing: 1px;
+}
+span{
+    color: #01050b;
+}
+.navbar {
+        background: #eddde9;
+        height: 60px;
+        width: 100%;
+        margin-right: 20px;
+    }
+.navelist{
+    display:flex;
+}
+.navelist a{
+    position:relative;
+    top: -55px;
+    left: 250px;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin:0 25px;
+    transition: all .45s ease;
+}
+.navelist a:hover{
+    color: var(--second-text-color);
+}
+.navelist a.active{
+    color: var(--second-text-color);
+}
+#menu-icon{
+    font-size: 40px;
+    color: var(--text-color);
+    z-index: 10000;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+section{
+    padding:160px 15% 120px;
+}
+.home{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url(.avif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+}
+.slide{
+    margin-bottom: 20px;
+}
+.one{
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--text-color);
+}
+.two{
+    display: inline-block;
+    color: var(--second-bg-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    list-style: 1.1;
+    margin: 0 0 8px;
+}
+.home-text h3{
+    color: var(--text-color);
+    margin: 0 0 35px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.home-text p{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+.button{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    padding: 12px 28px;
+    background: var(--main-color);
+    border-radius: 10px;
+    display: inline-block;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.btn:hover{
+    transform: scale(0.8);
+}
+.btn2{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-left: 25px;
+    
+}
+.btn2 span i{
+    height: 55px;
+    width: 55px;
+    background: var(--main-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.btn2 span i:hover{
+transform: scale(0.9) translateY(10px);
+}
+.about{
+    background-color:var(--bg-color);
+
+}
+header.sticky{
+    background: #726e6e;;
+    border-bottom: 1px solid #2c28281a;
+    padding: 12px 15%;
+}
+.about{
+    display: grid;
+    align-items: center;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2,1fr);
+}
+.about-img img{
+    height: auto;
+    width: 70%;
+    border-radius: 10px;
+    
+}
+.about-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.about-text h4{
+    font-size:24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 2;
+}
+.about-text p{
+    color: var(--second-text-color);
+    font-size: var(--p-font);
+    line-height: 1.5;
+    margin-bottom: 4rem;
+}
+.services{
+    background: var(--second-bg-color);
+}
+.main-text{
+    text-align: center;
+}
+.main-text p{
+    color: var(--second-text-color);
+    font-size: 18px;
+    margin-bottom: 15px;
+
+}
+.main-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.services-content{
+    margin-top: 5rem;
+    display: grid;
+    align-items: center;
+    gap: 1.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+}
+.box{
+    background: var(--bg-color);
+    padding: 35px 45px;
+    border-radius: 10px;
+    transition: all .45s ease;
+}
+.s-icons{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.box h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 8px;
+}
+.box p{
+    color: var(--second-text-color);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.read{
+    display: inline-block;
+    padding: 8px 10px;
+    background: var(--second-bg-color);
+    color: #ccc;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+.read:hover{
+    letter-spacing: 1px;
+    background: #cdf7fc;
+    color: var(--second-bg-color);
+}
+.box:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+.portfolio{
+    background: var(--second-bg-color);
+}
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.row{
+    background: black;
+    color: var(--second-text-color);
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .45s ease;
+}
+.row:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+.row img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    height: 0;
+    width: 100%;
+  /*  background: linear-gradient(rgba(176, 13, 13, 0.1)#ff004f);*/
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(89, 136, 113));
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: height 0.5s;
+    padding: 0 40px;
+}
+.layer h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.layer p{
+   color: var(--second-text-color);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.layer i{
+    color: var(--main-color);
+    margin-top: 20px;
+    font-size: 20px;
+    background: var(--text-color);
+    width: 30px;
+    height: 30px;
+    align-items:center;
+    justify-content: center;
+    border-radius: 10%;
+}
+.row:hover img{
+    transform: scale(1.1);
+}
+.row:hover .layer{
+    height: 100%;
+}
+.contact{
+    background: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+.contact-text h4{
+    color: var(--text-color);
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.contact-text{
+    color: var(--second-text-color);
+    font-size: var(--p-font);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.list{
+    margin-top: 5px;
+    margin-bottom: 2.8rem;
+}
+.list li{
+    margin-bottom: 12px;
+}
+.list li a{
+    display: block;
+    color: var(--text-color);
+    font-size: 15px;
+    transition: all .45s ease;
+}
+.list li a:hover{
+    transform: translateX(10px);
+    color: #ccc;
+}
+.contact-icon i{
+    height: 45px;
+    width: 45px;
+    background: var(--main-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 25px;
+    margin-right: 10px;
+    transition: all .45s ease;
+}
+.contact-icon i:hover{
+    transform: translateY(10px);
+    color: #f0e9e9;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input,form textarea{
+    width: 100%;
+    background: var(--bg-color);
+    padding: 10px;
+    color: var(--text-color);
+    border-radius: 10px;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 240px;
+}
+.contact-form .submit{
+    display: inline-block;
+    font-size: 16px;
+    background: var(--main-color);
+    color: aliceblue;
+    width: 160px;
+    transition: all .45s ease;
+}
+.contact-form .submit:hover{
+    transform: translateY(10px);
+    color: #f0e9e9;
+}
+.end{
+    padding: 20px 20px;
+     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    background: var(--bg-color);
+}
+.last-text p{
+    color: var(--second-text-color);
+    font-size: 14px;
+}
+.top i{
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--text-color);
+    background: var(--main-color);
+    font-size: 20px;
+}
+.resume-icon{
+    display: flex;
+    padding: px;
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.resume-text{
+    display: flex;
+    margin-top: 10px;
+    padding: 5px;
+    
+}
+.resume-content{
+    margin-top: 10px;
+    display: grid;
+    align-items: center;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2,1fr);
+}
+.resume-img img{
+    gap: 1rem;
+    justify-content: center;
+    border-radius:5px
+}
+.resume-img {
+    padding: 10px;
+}
+
+</style>
+</head>
+<body>
+    <header >
+        <nav class="navbar">
+        <a href="#" class="logo">AR<span>T.</span></a>
+        <ul class="navelist">
+            <li><a href="#home" >Home</a></li>
+            <li><a href="#about" >About <span>ME</span></a></li>
+            <li><a href="#services" >SKills</a></li>
+            <li><a href="#portfolio">Project </a></li>
+            <li><a href="#resume" >Resume</a></li>
+            <li><a href="#contact" >Contact</a></li>
+        </ul>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </nav>
+    </header>
+    <!--home section desgign-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <div class="slide">
+                <span class="one">Hello</span>
+                <span class="Two">I'm</span>
+            </div>
+            <h1>Raksha</h1>
+            <h3>I am a <span>Artiest</span></h3>
+            <p>Being a part of CodSoft and having a intenrship through CodSoft is an wonderful flatform to show case our talent. </p>
+            <div class="button">
+                <!--You can use href="#top" or href="#" to link to the top of the current page!-->
+                <a href="#" class="btn">Welcome</a>
+                <a href="#" class="btn2"><span> <i class='bx bx-play'> </i>    </span>My Work</a>
+            </div>
+        </div>
+
+    </section>
+     <!--about section desgign-->
+     <section class="about" id="about">
+        <div class="about-img">
+            <img src="raksha.img/my.img" height="800" weidth="200">
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Creative a Doodle Art Work</h4>
+            <p>
+                gven eecioweh cwejc wi dwiduiwhdio aw uiaioawdwadiouajw wioid wdiowdj auiwaiodjwdiowd iodowdajdwajdiawhd8yioawd8aid awy dygaw  89ydioaduiadio  89ydioaduiiodai8adio   8ad ioauiadioadi 
+            </p>
+            <a href="#" class="btn">For More</a>
+        </div>
+     </section>
+
+     <!--skills section desgign-->
+     <section class="services" id="services">
+        <div class="main-text">
+            <h2>My<span>Skills</span></h2>
+        </div>
+
+        <div class="services-content">
+            <div class="box">
+                <div class="s-icons">
+                    <i class='boxicons'></i>
+                </div>
+                    <h3>Creativity </h3>
+                    <p>ehdu deh di d jd adjioad ioSJI s sjQIOSJD Ijjdasdj jaiodjaidjadji sdiojASD I IOAU DIJDAI</p>
+                    <a href="#" class="read"> Read More</a>
+            </div>
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class='boxicons'></i>
+                </div>
+                    <h3>Flair for design</h3>
+                    <p>ehdu deh di d jd adjioad ioSJI s sjQIOSJD Ijjdasdj jaiodjaidjadji sdiojASD I IOAU DIJDAI</p>
+                    <a href="#" class="read"> Read More</a>
+            </div>
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class='boxicons'></i>
+                </div>
+                    <h3>Sound knowledge on tools</h3>
+                    <p>ehdu deh di d jd adjioad ioSJI s sjQIOSJD Ijjdasdj jaiodjaidjadji sdiojASD I IOAU DIJDAI</p>
+                    <a href="#" class="read"> Read More</a>
+            </div>
+        </div>
+     </section>
+
+     <!--project section desgign-->
+     <section class="portfolio" id="portfolio">
+        <div class="main-text">
+             <h2><span>Projects</span></h2>
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="https://i.pinimg.com/736x/63/3c/ab/633cab4e565baa9a3bbedc68ec40107a.jpg" alt="" srcset="">
+                <div class="layer">
+                    <h5><span>Birthday</span> Design</h5>
+                    <p> hciua c8ahop00aic 9 89qu9 a9c 90a0q da co9aj cio </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="https://i.pinimg.com/736x/c9/5d/72/c95d72818121c0a26058dd739a2bf2e9.jpg" alt="" srcset="">
+                <div class="layer">
+                    <h5><span>Wedding</span> Design</h5>
+                    <p>hciua c8ahop00aic 9 89qu9 a9c 90a0q da co9aj cio </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="https://w1.pngwing.com/pngs/738/986/png-transparent-circle-design-drawing-cartoon-doodle-line-art-text-visual-arts.png" alt="" srcset="">
+                <div class="layer">
+                    <h5><span>Cartoon</span> Design</h5>
+                    <p>hciua c8ahop00aic 9 89qu9 a9c 90a0q da co9aj ci </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="https://i.pinimg.com/originals/0a/92/93/0a9293564992a033700207695cc68818.jpg" alt="" srcset="">
+                <div class="layer">
+                    <h5><span>Detroit</span>Art</h5>
+                    <p> hciua c8ahop00aic 9 89qu9 a9c 90a0q da co9aj cio </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="https://img.freepik.com/premium-vector/zentangle-lion-mandala-drawing-lion-mandala-doodle-art-designs_97378-950.jpg?w=2000" alt="" srcset="">
+                <div class="layer">
+                    <h5><span>Mandal</span>Art</h5>
+                    <p> hciua c8ahop00aic 9 89qu9 a9c 90a0q da co9aj cio </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+     </section>
+
+     <!--resume section desgign-->
+     <section class="resume" id="resume">
+        <div class="main-text"></div>
+            <h2><span>Resume</span></h2>
+        </div>
+        <div class="resume-content">
+            <div class="resume-icon">
+                <i class='bx-up-arrow-alt'></i>     
+            </div>
+
+            <div class="resume-text">
+                <h3>Still want to kmow more about my resume</h3>
+
+            </div>
+ 
+         </div>
+            <div class="resume-img">
+               <img src="raksha.img/my.img" alt="" srcset="" height="200px" width="150px"> 
+            </div>
+            
+     </section>
+
+     <!--contact section desgign-->
+     <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>My <span>Contact</span>Details</h2>
+            <h4>If you have any project in mind</h4>
+            <p>awp 9awudpawod adoi dwao u </p>
+
+        <div class="list">
+            <li><a href="#" ><span>phone number:</span></a>1234567890</a></li>
+            <li><a href="#"><span>mail Id:</span></a>DoodleDesigner@gmail.com</a></li>
+            <li><a href="#"><span>Instagram :</span>raksha_Art</a></li>
+            <li><a href="#"><span>Linkedin:</span>At_Doodle</a></li>
+        </div>
+        
+         </div>
+        
+        <div class="contact-form">
+            <form action="">
+                <input type="name" placeholder="your name" required>    
+                <input type="email" placeholder="your email" required>    
+                <input type=" " placeholder="your mobile numebr" required>    
+                <textarea name="" id="" cols="30" rows="10" placeholder="How can i help you" required></textarea>
+                <input type="submit" value="Submit" class="submit">    
+            </form>
+        </div>
+        </div>
+     </section>
+
+     <!--footer section desgign-->
+        <section class="end">
+            <div class="last-text">
+                <p><span>Thank You</span></p>
+            </div>
+
+            <div class="top">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </section>
+
+    <!---custom js link-->
+</body>
+</html>
