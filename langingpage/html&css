@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="ur port" content="width=device-width, initial-scale=1.0">
+  <title>foodiee</title>
+  <style>
+    body{
+      background-color:black ;
+      width: 100%;
+      overflow-x: hidden;
+    }
+    a {
+      float:right;
+      list-style: none;
+      margin-left: 50px;
+      text-decoration: none;
+      color: rgba(8, 8, 8, 0.958);
+      padding-top: 7px;
+      margin-top: 25px;
+    }
+    .foodiee{
+      height: 60px;
+      filter: invert(100%);
+      margin-block-start: 10px;
+      background-color: black;
+    }
+    ul {
+        margin-top: -60px;
+      overflow: auto;
+      color: white;
+      display: flex;
+    }
+    .list a {
+      color: white;
+    }
+    .SEARCH {
+      border-radius: 3px;
+      background-color:white;
+      color: white;
+      font-weight: bold;
+      margin-left: 10px;
+      padding: 5px;
+    }
+    .landing {
+      font-size: medium;
+      font-weight: bolder;
+    }
+    .Image {
+      opacity: 0.9;
+      width: 100%;
+      margin-top: 5px;
+    }
+    .select2 {
+      background-color: rgb(241, 247, 247);
+      color: rgb(14, 168, 211);
+      border-radius: 6px;
+      border-color: transparent;
+      padding: 6px;
+      background-image: linear-gradient(to rigth black 100%);
+    }
+    button:hover {
+      background-color: rgb(71, 64, 73);
+      color:rgb(14, 168, 211);
+    }
+    button:active {
+      background-color: burlywood;
+    }
+    #top {
+      position: -200;
+    }
+    .btn1 {
+      border-radius: 30px;
+      background-image: linear-gradient(to right,black 100%);
+      border-color:black;
+      padding: 5px;
+    }
+    #content {
+      position: center;
+      color:black;
+      text-align: center;
+      margin-left: 100px;
+      margin-top: -500px;
+      text-shadow: 4px 4px 4px rgb(234, 241, 241);
+    }
+    .phone {
+      margin-left: 60%;
+      float:left;
+    }
+    .g {
+      scroll-margin-left: 5%;
+    }
+    .center_head {
+      position: relative;
+      margin: 0px 50px;;
+      color: black;
+      font-size: 20px;
+      top: 10px;
+    }
+    .centerpara {
+      position: relative;
+      top: 60px;
+      margin: 0px 80px;
+    }
+    .counterhead1 p {
+      position: relative;
+      left: 100px;
+    }
+    #navbtn {
+      border-radius: 6px;
+      heigth: 10px;
+    }
+    .centerhead4 button {
+      position: relative;
+      top: 160px;
+      padding: 4px;
+      border-radius: 9px;
+      background-image: linear-gradient(to right, yellow 0%, red 51%, pink 100%);
+      border-color: transparent;
+    }
+    .lastcontent{
+      display: flex;
+      justify-content: inline;
+      align-items: inline;
+    }
+    .lastcontent img {
+      height: 10px;
+      width: 10px;
+      box-shadow: -6px 6px 6px black;
+     margin: auto;
+    }
+    .about {
+      border: none;
+      margin-top: 90px;
+    }
+    .lastcontent button {
+      border-radius: 6px;
+      position: relative;
+      left: -50px;
+      padding: 6px;  
+    }
+    .about {
+      background-color: white;
+      height: 100px;
+      box-shadow: -2px 2px 2px white;
+    }
+    .about button {
+      border-radius: 6px;
+    }
+    .lasthead{
+      text-shadow: 2px 2px 2px rgb(9, 0, 0);
+      background-color: black;
+      color: white;
+      position: relative;
+      top: 500px;
+      left: 41%;
+    }
+    .symbol {
+      border: 1px solid pink;
+    }
+    #imran{
+      margin-top: -15%;
+      margin-right:10% ;
+      width: 10%;
+      height: 50%;
+    }
+    .first{
+        color: white;
+        position: relative;
+        left: 70%;
+        top: 7px;
+        display: flex;
+    }
+    .mobile{
+        margin-left: 20px;
+    }
+    .g{
+        margin-left: 30px;
+    }
+    .navbar a{
+        position: relative;
+        margin-right: 20px;
+    }
+    #navbtn{
+        width: 80px;
+        height: 35px;
+        position: relative;
+        top: 10px;
+        left: 45px;
+    }
+    #navbtn:hover{
+        background-color: grey;
+        color: bisque;
+    }
+    .lastimage{
+      position: relative;
+      top: 500px;
+      left: 75px;
+    }
+    .lastimage img{
+      justify-content: center;
+      align-items: center;
+    }
+    .l{
+      color: black;
+      font-family: clarendon condensed;
+      position: relative;
+      font-size:x-large;
+      top: -89px;
+      left: 170px;
+    }
+    .foot{
+      color:white;
+      font-size: 40px;
+    }
+    .n{
+      position: relative;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      top: -45px;
+      right: 4%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="first">
+    <p class="mobile">
+      &#9990;+0187654839 </p>
+    <p class ="g"> &#9993;foodiee.gmail.com</p>
+    <button id="navbtn">Submit Recipe</button>
+  </nav>
+
+  <header>
+    <nav class="navbar">
+      <ul class="list">
+        <img class="foodiee" src="https://static.vecteezy.com/system/resources/previews/004/312/696/original/food-logo-template-design-icon-illustration-vector.jpg"
+        <a  href="">  </a>
+        <a href="">HOME</a>
+        <a href="">RECIPES</a>
+        <a href="">PAGE</a>
+        <a href="">BLOG</a>
+        <a href="">SHOP</a>
+        <a href="">SHORTCODE</a>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="Image">
+    <img
+      src="https://thumbs.dreamstime.com/b/italian-food-background-variety-ingredients-over-slate-35112782.jpg?w=768"
+      alt="recipeweb" width="100%" height="600">
+
+    <div id="content">
+      <h1>IT IS EVEN BETTER THAN</h1>
+      <h2 id="top">AN COOKERY BOOK </h2>
+      <P>Learn how to make your favorite dishes</p>
+      <button class="select2">I want to make|Categories</button>
+    </div>
+
+  </div>
+
+   
+  <div class="lasthead">
+    <h1 >Recipes By Category</h1>
+  
+  </div>
+  
+  <div class="lastimage">
+    <img src="https://static.vecteezy.com/system/resources/previews/010/842/255/non_2x/illustration-of-basket-with-vegetables-in-flat-hand-drawn-style-tomato-carrot-salad-corn-radish-organic-healthy-food-vector.jpg" width="450px">
+    <!-- <button>&#10004;Veggie</button> -->
+    <img src="https://static.vecteezy.com/system/resources/previews/012/507/426/non_2x/cupcake-illustration-cartoon-food-and-drink-logo-sweet-dessert-icon-symbol-free-vector.jpg" width="450px">
+    <!-- <button> &#9881;Deserts</button> -->
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABLFBMVEX/////0a/0DBz56dzDCRbHurH/1rP/0rD/z6v+7uFDHwBEIAD/7+JAGQA/FwBBGwA0AADACRZIJgrLvrU2AABAJwnGCBY8EwA6DgD/2bYwAAA6FAA+FQDKyspEJgn6Ch329fT98+o5DAB/XUH917r94MlIJADo2c08Jwno5eI2DQA3BQDNxb69s6phSDf96NVfPSH93cLYxrfk0sSlj3+1ppzrCxtNLRaRg3nIoIHv7++CbF3a2trcCxmGd23cspF1X1C/vLmUb1R5Vz7uwqCnm5HUqoqUfWywm4toUD6sloZbIwypEROFHxCbFhJoIA0oAAC+l3lqSC1VOCSifmBxXU+bkImup6Gvi29YNhfItaZ1ZFqLf3WDaleNdmVpTTZ0HQ6NHRFTJQvZuaBLmZIEAAAWCUlEQVR4nO2dCVvaTNfHoUgiGZLBYYuCFNEGWbUsQkUxVRBwqVWqVerWvt//O7xnwmJAlIFE8X4u/r1u6y1Y5+c5c5bJTGKxzDTTTDPNNNNMM80000wzzTTTTDONpfDKk8JTHou5Cq/YNr6srXG8db4rK8+trX3ZsK2Epz04o1pxbgAZRRom+DqQbjhXpj3MSeX4wllfYOvntHJfHNMe7Nha2VhjgNNjrm38h0wZ3uDGwutCchvhaQ+dSba1eX5svJ4lP7y7ruQPFOVgj5sQESD5D+2tK19XEwIInXOTmhEYrV8/KuPKV341oMiNBiLSPj85IkB+SMaVr/Pct7hCMs6WnxDpoDK5p35Mxi8QPLkLJLeczpqoRJBADExGjfHLtJH6tEGTA29dElSnM+tHzWRTREvfFo14KjBuTBurpxVOy358ZQmp2TpCkaolrMok/stAvNEQuQ/iql+62Z3fRCgRRH6VfrWYIIFVqzHEj+GqHQNqhIcBAirvaC+kIki8MBZvPoQZv+jLM+4bEYjye2d5m76UJFgghwYRp23GlbX++pOrbIpELC4vx+irsQc/wucG4411fm2KZnQ8Gw5vXQ2Q4J/lZc1TwyUPCewbRbRap1asbgxpIPjFX3Eipr8vL4fpW648COKNYU+dUt74OrxDWjwUIN//7nhqKmhCvIESZwp84bWXWkA6GRXpquOpO4og3Bisb+hkDL834MorY+YrMBnlMiDSYcWaElIMh1Tre6eNlVejB8//ChD/5fKyljagvkHC+aJRRP5dEV8HhNFw5xLBNN7QyRguQ31z/Z9CXBm9CsPtISQUfncm45WHxI0jzr8bIgMgjTc3GOHqThuxConx138GkQkQEPmDAIlAfbNMvykvghUNh5v3QRw1B3viuX1AhJBKk38KExI4N4z4LnNxjX043LVI/Cq14u8IERBSDKd+69rbA75QybyAeC4QqbG8fCWRSK0kCgeGS9S3r26+jLeYzR0qCDeKIvEcRe1NFPhmfCq+cTc1rNh+HXFPQQiTyJHTZi8J6MZo1//WZThjGO1DrBBEcC260ioIEGyMx9O3DaiTDIirFBAu5R8iYEtEkMHVKU1vB8geRvsRFSIEkRBs5FXBhJn4hgF17EnYRbwOECI2Wm53VRBWDVc2bzcVVyYdEG+9QFJuxWnP1whSTLCh1fo2U3EyH6XivkmCmlMLEi1s9kyYiG/jp5P6qJUacRMhURCwJBJTJuKb+ClzOTpMi6sCCXoeyldXgvjLFDd9gwL1q5HxcOeBYNVi2Vn+rggHJoQakOnVm3NyHwXxe1KbcLmACqbY0DrvNJnQ2LD4CsGqxRJb3mkIpGJGqAG/MBfQQJhpI26igsWyvbxcxtjw0mJbJgcbo8NZPBDwtsVC+yhzgimVmYBGTWjl9rF/h07E35JJwdRkIxoFpMFU/q4FU8mUuk3TvHmAhk1o5Q+1YAqhBqFNs7zURCMaD358RcAliyW8vJNGBZOCKfyrZgEaNyG4KRHSFhpq/pgWTE00ohkDWrwQCtt0Il6J5gVTs3KisXKmO5Z9jNvB1G9aMDWtsDFUkXbFXUuRJA013yPmBVOTqtMVU4bCHwb8Va2qkdCDWZHGak4rbEKq4DlusRLHZRpMl5voZn4RxHGcoQ2MmkyJNZO39h22xcrht+v9VUG4tGjBVCDkZvNidf/6/LDCLRrkNKHZn2CJtEMHRrIeXu9vxuPxgIQFojTDNNQURYIQog1/IBCP36xeH85Tc074U0xYPB1zGb+Hx1u//bqQ44CGsOSXsUIIilHCapAUms2CIsp+UQBUKRDf3P9W4SezpQmL/BM4KQy2cn0gBrAgiLLYbNzl8q1MNicllmmo+S7j2ootms206rW7dMHvxwjhQODges86iSUNu+n4TsovVs4PcEAQpAhRa61M1OF0OhwOZ0uWU1owxYJqA9GvOW3RTP6+oUREhKTAxXVlfEbDbjpuJOUW9/YJ4PnlRo7CORy2thyZhFi00FDTFJpRW0/AaYu2ag+JIEIBZfWQG7McMBxNx3NSfnFvVcBISjTqWZvTYeuTB/+xtCtTf7T/FRtQZnNNDyaCdDEuo1E3HcuEXGUfgoeMclnHAB3VjZAO01BziyOt5y8DZOY+IhEUONgba6+fwS5xnJqUXzzHGMk3eZvzOR4gqFjZbgfTYH3IL0CDrAlgx/hYZxkM1qZj5Apu/iCOgoX8oHP2hp+TPDGtMpXF2opjmJVB9nsFk8DNGBf8DeYL9mnI7d1Adsg9tx8NJVpyuBMidi2YKih9VIcgGwXsQU63OwW2RuIYG+GMTURmE9IL9lI6M8AHBNFMvaY2hUREFghdyIDKNK2goF9ORJSHUq41EJGydrs7VxCQxN5EGpqIzNmQXq6X72yOfjxbJqcWIn4RYyxKfj+htXe7MpXkoARfxVJETN+3dIEpagfEVBojgdmKhjKijZGQr9wg+X6AL1NrBoNQ1vg9+EGt5eqtG9yuvctYOmrVc/fqTSQSxAKWlUY+2rW+nSLaGxjdsC7nzNsMEH5h/DVyq1i66wN0ZhqihLDseahBarRpdU0D34S1hYygv+7UpmC0dXSneODXIBdyHUZ7W2kBr7Ia0UioYQw03GEcNfsMGL2TITFG7lq6ssZxjz3bWjD1izVnb6LaMkebLgkFUd35ROhOERQ/ZDSikVDD+CPoka6MzoSOjCIiuZnvDyI0XSS12pvghv7dTme2hiWUUDvzUEPMScIBoxGNLCoy/oRKQlD1Q85iJDZbg5nAAbV3vh1MkdL/EuSYGkZ+Fb7V3lUaxVln4uSArPssryV/X5XyALOyP67SrOjMJqQrCw01l4JLX5R3Jm4BJepOdxfQXcOsexkNBFPGmo3bx8Hs03AdGZfQGLBRtASpL6NotffOzi2WW5BIcv1mzCho09YzoTvPfA3HQN3GmCy4VUHJ6syVl4P1/tTvqC/hYAQTUigXr8rltEIUyBOubD+iKkTcOkKE9xkJJ08XjM0hEAp6wlYC1waKm+ymSw5iRAikfkxXNARJdt0NGLqJsJ4QC4z5wkCLyJgOgbC/H4KGPT9Yn0Lqu39ALlcC5HIpjVyrv0l0OO5EQdURQjBlzYiTJ0TG1W4gFPVGc9RdJFEbrMEh1tB2PpvJZKI252DN7cw+BBHO258IVYGZcPKVb3ZCougt4shFFAnXbUM7pCF9k8ORvfcICFX1TqqQdyBkLWmAUOqrSh15IiE/vm8N4xmgA7vmVY+IxHTe3WdCdsLJi5oxCEmkb+Y5s/c4iMRIoVTPUp8cxtlZa8upGCo8qVCz6wGLQfIehIw/gBIKRMwPTKxaMyEK2B8pqPdHrUyW9rs9tXviXKmhRCRBCEqNYkrHB2EGE8ROOPllRHbCwn0QSblkX3h02loACd2hALkwqDTT6Yaq3oFUtZFuFpAsS3RtPxJUj+xuPR9YUCRY/ViEJFqTiViyu7P6ag18M1uvPUiuiB+yoKCp+7cgBv0Rl6LmWrZo0t7HZy+JJFjKs8fS9yBUss6ah2jBwh3tK0lpWshCv3v3cIM9ro4iaLNxn6tnqOfa+vkgijYxkUtuIGSsaQwQjhFpsjZnPYGQv0TjhfvZiq+jO/1s0aitOyFp/Im6B/hSJT8UDDk3ELJWbe8QSw8oIZTOTT/Cyr0WM9zZQcohimYH8Nype4SJ2KSu8C6ErBm/TQjOmVMkJCqlfDvwv04ZzQyaz54vKRgI7zU/GIPwXWqabCdF3EOzjnGjmO9ER7cb8sQAaBQyxSAdeGWxgTGSUKmd+N+HkLXy3se421s4sjVMJxLRIHtJwK2T3f6Mzg54RIRpjGrZbDfgsO/xm7zyZu2erkW511s4HNGjJhRh4K1NNZe3D2PSwwFdTm0q9Bs8D0dRZ7cHdtdE5h5/8u6JkZDfi+OSvrewZWqKR0JIEFHhoZSrptzDlaoXSw8FRC92Bz1KLUPTTM/qDZRgXKcxQMi4isFbb5DU6ssOTkcmtyn7JRg7FkVRuHlQS7fFXC53dHQEH4u3JRXyI7yC4fcQ9MsXR5l2P9UDrErogtFJDaxisC7qc+cBlLYPdLROZ7SVaxSQv70hAYoZUZSkYFCSJACDyoba2O9HBWiGbc5Ou/jk0E0UZ710YWAlKsz2E+ixH0EqDUn0kOOhnqmp6SYRgrIs+4NUfvgsiEgzrdbq9MpMrxmOPk1QFWP2A6fhiQmZN5byezCTau7njLZ2PQOFWybjbuXrdfDSej3fgkY/217q173zqXxzl+A3wLwN1ciKMPPlQ+5cJFCxDSnYdKR9Gnw5mtGlfjVI2K89GVrVZ70yo2UMIjZowdbfXjCpvzx159NQuY1xst3IlRn2vSb8nghNOclpyW+gvRiJ92Q+miJrCiJEYr0sY3C/Cft+IZiJJBTS+qdOTcoCCXTZ/t7XXW+K9B8aY6u0sT1D7IQVEjo7XQ8huVHtFjHJwYJ0QAN0lK+a9qOQ9/QxJLAfUzS23YT5F8lbC6Hjz3PHlDGdSz0VpM8L76Glt9Y6FZuU7/jE9xhS2AmNbfZmDzWLm4h8/vzphDJKilpN9ZWjWpEGCeOlKhXwjlRFUoDvh8/nOwuNcf7L2G4TB7ObLh4Ioa1Pnz5vnZyteyG/Fzpl9zCeAThafF8WggKhfAu+ubmxCOcN3uuMfbvJvuDd/QT6/Ml3StZDRJCU9F0un3rRbm3DpvJFNY0kivfv8WQO+IDwOMR+7MTo2SDmicj9Er2+z580xs9bC6ehdW8ICk+hALVZtZq3P2ss7PnqFdRzBXgPTL51cgrm0/iA8F+owHx7CaM795i3fUH1vb7QJtQgP/l+HK8DJUECFgWFFJoPDbVUKt3Df2rjoVkgChaxADnGu75+9sP36VMHTyMkzIejDG8SZs6I/LfA+kmPUIP8vOU7efy3DpxeyHCK1mBof+itaiDpAdr6+r/TEx9976ethSdCwn78y/hGb9afBEWN94eesEP5eWt34eTv4/E/AkwhLxX8Tci/48e/Jwu72lu09/YTXrCeOjF+MIg1X/AVwXs6SNjD1Iy0u7vro4K/t3pf7UlHuBBiJzS+k511hyk/j0JnQwmHwA5THyHzmXYzTj6xuukigaJmBOFr2n0iPAkxn40y4/QaazRd3Az92zKF0AeErNswzLinEms0haKG7JpE6MWsW2lMuXkE69WLfSFkGiHrYrA59zhhrE2hy1/3GZiIu0/J4odXYruflNGatCu2+qm/qBlfPj0h43K3WUed2dYy+MOA98Q0Qqa1UtNOOrMtm/J7ce9fcwj/ehmXacImEbIlDL6yFHo0h/A0JLIQmnj7vTCTmy7GRxc1r2juifAxJLIsYsyHTSNkK04XldDx5ID9hJilATb1DoosRly8QAaKGn1rcRYSGAhNvPGHhW0m0ovdk6f8fkI0+olKZt8Ek8FpuF/i+u7EE1FPeBwio3+eabf96IhhQzR3Lq3PTUyoay180C2PbC0MnZQZqtHVKTe4jjEp4dw/cjOS0Py77o1uMThI+c/WMSYhXPg3usV/i5uYjgw2fCURGr6OMS4hGdniv829dkdVijwfMFDU6FqLEzKyxTf5Zm0djfRT/iZ0Nimgvmgb3eK/1Y12R/kpZyTl9xGOaIDf7n7QI+KpoS6/r3ka0QC/3W3LR/iplvInJZzTE77eAL/lzaBfX9Dgrg2kfF3C//t6A2zW0sVwvToVjaT8rX7CV9rDt74p+4vPz7EaS/l6wtNQ/JX28M2fHfDqE3TiL1y6GC19WfoYeuX06NtkQr1euZ8wb1VCj5MB9hGehZZebJ7e4wEXK68Qbk7c5T+VNLR5ir/oKe/ykJKXr0bxBwKZLOV/fkqHc3PHIeGFos30mwe/oBdzBqT89QkJdYALLzZPb5snWBAn7/J1ofTl5un9AF9EpCl/soV9PeFLrcV7Ar6EOPnCvj6UnoSGHrR4X0AIN0MJKxOmfH2godfWhhXe7xRknjQsL/IVNGGXrws0wwvv932uXAfxeQHHVybsgfXLUMOuPE3rWaTPHv1EH9VBJgDsy4a+U+9gWTqVR1hqenZhkVudKCFuzekJn5Wl03x89eBk5PbxJD2w3klpWRrXb9ubn8YUfNLA00gnTIi+uX5CRQ/4/k8gHVCfpz7bvje+CecWjtHmE+FHeMC6Pqbye4HxE2LfLKRF29MZ7qk+z1mnjd6vnK8o4y8K+wYIQ0/bhT6AAdsKd/MGX9kce3Nbv4/Skqazljj/NTxtMJ26rso9oPWxCD8PAPYS/kdx0Cc5OMq4OG5CHATUEn6Fn+em9rTxV2Tj56FDxGNt/fINAtKEj+Z50y9/miQHz4+19Wt3EK+dLC4+Kh/Vyv/5mdPF7nMDtgNNcdoUryqmhM62GGbi1u7cEL4538I/Qm89+JF1ib1/YaS7uy9ybm3t+nwLw/gA8DgklaaNMEI7MvGeLvjmFoBB25YPqF3tarv154bTtQG9OL09bYRRsnsUesCuU6ksDOgFts4c/BfCzdi0AUYricWQ96zHyCqf7wcJif8FQItlu+RCwEgPEo7Bd3LmJZHGh3fRjpLNBDCS0xNGSI0vJLg+dp7o1/eGjBUvPbc19zolfXXhb/t07c60Rz2elsuFCIUkZ39PFha0A08+PVf7CwsnPx6PvV6CI+nUtEc8vrbtpUJCEkJeb+jf2ePfHycnJ52ICp+d/Ph7+nh2TNa9IQVHUOmDp/kXtZ0sXmKPH6P2wbwQ0dQ+pEeP6SEsyZ5mOfWfiKAvajtZLacFV0L2ByV6e3Z6F5eg3y9HPB6p+ecqtROe9ghNUTiWTOWviuVyqVS+LV5dVfOp5E4sHJ72uGaa6X9JqT/pRpV+kiynL6th+GSnDLqyxMqautWK9sVk+43l8m0ePgkXS/D+3+Wq9s9A1k/+SVnCtx8sf1wtFf5cXsAnVU8irSxdhmGcS0qzWbLECk0SLDQbnTcSf7PgclGk1FLzUlmiT5tLL8H/3noSgHT1Ez6kfl5Zqj/VabEMVTjtgd89fehYBC1bthsusEfSVbLQWBm23LrsvaBZkMPhZMH1GzigCk2KCe2b4dWiKDbDlisXJVyqxjyFD5YiL2VVKyqvXPTO+UlXg34od14sLj05XCECH1IelXJcWZKRZo/QX4TvbRO6qo3Ix/JRsJ3gki+h8ym7aHW57QJzJBOkIGhT8xnhjmcTOBLNhqLs9AhdO6WlWJswcuNXp4LxmsJ5xQ/2KHto7Ii50kDoaZZUrZp+Rpj0NDTCm4QWabqEMZzu2LCoBD+aDUFhLMdgcDSkXLluaaR50UtVOk9T4JRpGlh6hJa8h8jteZh0FT5WLxxWfyerohimo73MFz04Rgm7i2Z9hFK1mqYmBg6INAkl3CVcAoe9FCPJ9gwteT7Yktvlz59LBTt8ElM9P5fSlOiJ8FZHqIieROGW2ocSwry9BUJXuEMYC3o6hNs3rvz7Y7yicGyn2yJ0PwvHun62HQv33hgDbVt6r4dj9EFlsd6bYvSj9sp27IOli5lmmmmmmWaaaaaZZppppplmmmm6+n/1g1hOpF/vLgAAAABJRU5ErkJggg==" width="450px">
+    <!-- <button>&#xf087;Drinks</button> -->
+    <h3 class="l">VEGGIE</h3>
+    <p class="n">experience a good service </p>
+    <marquee behavior="" direction="left" class="foot">Thank You for Visiting our page</marquee>
+  </div>
+</html>
